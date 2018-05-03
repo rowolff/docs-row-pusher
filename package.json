@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/rowolff/rowshook/issues"
   },
-  "homepage": "https://github.com/rowolff/rowshook#readme"
+  "homepage": "https://github.com/rowolff/rowshook#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3"
+  }
 }
