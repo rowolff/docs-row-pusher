@@ -1,5 +1,5 @@
-import App from '../src/app'
+import app from '../src/app'
 
 it("runs", () => {
-    expect(App)
+    expect(app)
 })
