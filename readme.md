@@ -1,9 +1,11 @@
 # usage
 
+Prerequisites: You have node installed.
+
 * `npm install`
-* create a `variables.development.env` file in the project root to add the port you want to use on your machine for local testing (see `variables.template.env` for usage, e.g. "PORT=3003")
+* create a `variables.development.env` file in the project root to add the port you want to use on your machine for local testing (see variables.template.env for usage, e.g. PORT=3003)
 * `npm run build` to compile
-* `npm start` to start the server
+* `npm start` to start the server locally
 
 Use a `GET` to see the supported routes (there aren't that many yet)
 
@@ -15,9 +17,11 @@ Will add a row to Google Docs (soon)
 
 The expected format is
 
-```{
+```javascript
+{
     "title": "blabla",
     "error": "blubb"
-}```
+}
+```
 
 You'll get an error if the schema doesn't match.
