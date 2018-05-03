@@ -4,7 +4,8 @@
   "description": "Simple webhook that allows pushing rows into an authorized google sheet",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -21,12 +22,15 @@
   },
   "homepage": "https://github.com/rowolff/rowshook#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^22.4.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
     "eslint": "^4.19.1",
+    "express": "^4.16.3",
     "jest": "^22.4.3"
   }
 }
