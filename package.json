@@ -1,0 +1,23 @@
+{
+  "name": "rowshook",
+  "version": "1.0.0",
+  "description": "Simple webhook that allows pushing rows into an authorized google sheet",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rowolff/rowshook.git"
+  },
+  "keywords": [
+    "webhook",
+    "sheets"
+  ],
+  "author": "Robert Wolff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rowolff/rowshook/issues"
+  },
+  "homepage": "https://github.com/rowolff/rowshook#readme"
+}
