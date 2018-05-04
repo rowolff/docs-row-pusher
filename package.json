@@ -5,7 +5,7 @@
   "main": "build/app.js",
   "scripts": {
     "test": "jest",
-    "clean": "rm -rf app/build && mkdir app/build",
+    "clean": "rm -rf ./app/build && mkdir app/build",
     "build-babel": "babel -d ./app/build ./src -s",
     "build": "npm run clean && npm run build-babel",
     "start": "npm run build && node ./app/build/app.js",
