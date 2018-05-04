@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/routes/index.js"],"names":["routes","add","require","module","exports"],"mappings":";;AAAA,IAAMA,SAAS,EAAf;;AAEAA,OAAOC,GAAP,GAAaC,QAAQ,OAAR,CAAb;;AAEAC,OAAOC,OAAP,GAAiBJ,MAAjB","file":"index.js","sourcesContent":["const routes = {};\n\nroutes.add = require('./add');\n\nmodule.exports = routes;\n"]}
