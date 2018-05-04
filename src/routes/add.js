@@ -11,7 +11,10 @@ router.post("/",
     },
     (req, res, next) => {
         controllers.add.row(req, res)
-            .then(() => next())
+            .then(response => {
+                res.addedAt = response.message
+                next()
+            })
             .catch(error => res.json(error))
     },
     (req,res) => {

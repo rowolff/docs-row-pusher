@@ -3,7 +3,7 @@ export function message(req, res) {
         const returnMessage = {
             "status" : res.statusCode,
             "message" : res.statusMessage,
-            "insertedAtRow" : res.insertedRow,
+            "addedAt" : res.addedAt,
             "data" : req.body
         }
         resolve(returnMessage)
