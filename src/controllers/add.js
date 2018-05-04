@@ -1,6 +1,12 @@
 import GoogleSpreadsheet from 'google-spreadsheet';
 import async from 'async';
-import creds from '../../google-generated-creds.json';
+
+require('dotenv').config({ path: `variables.${process.env.NODE_ENV}.env` });
+
+const creds = {
+  client_email: process.env.EMAIL,
+  private_key: process.env.PKEY,
+};
 
 const add = {
   row: (req, res) => {
@@ -20,6 +26,7 @@ const add = {
       async.series(
         [
           function setAuth(step) {
+            console.log(creds);
             doc.useServiceAccountAuth(creds, step);
           },
           function getInfoAndWorksheets(step) {
