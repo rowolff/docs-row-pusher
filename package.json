@@ -2,7 +2,7 @@
   "name": "rowshook",
   "version": "1.0.0",
   "description": "Simple webhook that allows pushing rows into an authorized google sheet",
-  "main": "app.js",
+  "main": "lib/app.js",
   "scripts": {
     "test": "jest",
     "build": "babel src -d lib",
