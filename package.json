@@ -2,13 +2,14 @@
   "name": "rowshook",
   "version": "1.0.0",
   "description": "Simple webhook that allows pushing rows into an authorized google sheet",
-  "main": "lib/app.js",
+  "main": "build/app.js",
   "scripts": {
     "test": "jest",
-    "build": "babel src -d lib",
-    "local": "NODE_ENV=development node lib/app.js",
-    "prestart": "npm run build",
-    "start": "node lib/app.js"
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-babel",
+    "start": "npm run build && node ./build/app.js",
+    "local": "NODE_ENV=development node lib/app.js"
   },
   "repository": {
     "type": "git",
