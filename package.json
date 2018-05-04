@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "babel src -d lib",
-    "start": "NODE_ENV=development node lib/app.js"
+    "local": "NODE_ENV=development node lib/app.js",
+    "start": "node lib/app.js"
   },
   "repository": {
     "type": "git",
@@ -37,15 +38,17 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
-    "prettier": "^1.12.1"
+    "prettier": "^1.12.1",
+    "request": "^2.85.0",
+    "tape": "^4.9.0"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "body-parser": "^1.18.2",
-    "morgan": "^1.9.0",
-    "google-spreadsheet": "^2.0.4",
     "async": "^2.6.0",
-    "dotenv": "^5.0.1"
-    
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "google-spreadsheet": "^2.0.4",
+    "morgan": "^1.9.0"
   }
 }

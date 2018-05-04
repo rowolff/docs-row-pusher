@@ -1,7 +1,18 @@
 /node_modules/
 /lib/
-.env
 .vscode
 
 variables.development.env
 google-generated-creds.json
+
+# Node build artifacts
+npm-debug.log
+
+# Local development
+*.env
+*.dev
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
