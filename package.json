@@ -5,10 +5,10 @@
   "main": "build/app.js",
   "scripts": {
     "test": "jest",
-    "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build ./src -s",
+    "clean": "rm -rf app/build && mkdir app/build",
+    "build-babel": "babel -d ./app/build ./src -s",
     "build": "npm run clean && npm run build-babel",
-    "start": "npm run build && node ./build/app.js",
+    "start": "npm run build && node ./app/build/app.js",
     "local": "NODE_ENV=development node lib/app.js"
   },
   "repository": {
