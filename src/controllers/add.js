@@ -1,6 +1,10 @@
 import GoogleSpreadsheet from "google-spreadsheet"
 import async from "async"
 import creds from "../../google-generated-creds.json"
+<<<<<<< HEAD
+=======
+import { WSAEINVALIDPROCTABLE } from "constants";
+>>>>>>> d08d404afa68d477f267bb1289c2844c592e7c42
 
 export function row(req, res) {
     
