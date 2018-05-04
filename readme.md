@@ -20,8 +20,12 @@ The expected format is
 ```javascript
 {
     "title": "blabla",
-    "error": "blubb"
+    "error": "blubb",
+    "spreadsheet": {
+        "id" : "123",
+        "worksheet" : "myTab"
+    }
 }
 ```
 
-You'll get an error if the schema doesn't match.
+You'll get an error if title or error are missing/empty. "Sheet" is optional, if ommited a default sheet/tab is used.

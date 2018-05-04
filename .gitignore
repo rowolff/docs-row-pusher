@@ -4,3 +4,4 @@
 .vscode
 
 variables.development.env
+google-generated-creds.json
