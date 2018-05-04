@@ -1,7 +1,11 @@
-const controllers = {}
+import validate from './validate';
+import add from './add';
+import respond from './respond';
 
-controllers.validate = require("./validate")
-controllers.add = require("./add")
-controllers.respond = require("./respond")
+const controllers = {};
+
+controllers.validate = validate;
+controllers.add = add;
+controllers.respond = respond;
 
 export default controllers;

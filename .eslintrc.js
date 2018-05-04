@@ -1,8 +1,7 @@
 module.exports = {
     "extends": [
         "airbnb",
-        "prettier",
-        "prettier/react"
+        "prettier"
     ],
     "parser": "babel-eslint",
     "parserOptions": {
@@ -99,7 +98,6 @@ module.exports = {
         ]
     },
     "plugins": [
-        "eslint-plugin-html",
         "prettier"
     ]
 }

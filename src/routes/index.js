@@ -1,5 +1,5 @@
-const routes = {}
+const routes = {};
 
-routes.add = require("./add")
+routes.add = require('./add');
 
-module.exports = routes
+module.exports = routes;
