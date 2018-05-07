@@ -39,7 +39,6 @@ var add = {
 
     return new Promise(function (resolve, reject) {
       _async2.default.series([function setAuth(step) {
-        console.log(creds);
         doc.useServiceAccountAuth(creds, step);
       }, function getInfoAndWorksheets(step) {
         doc.getInfo(function (err, info) {

@@ -27,7 +27,8 @@ router.post('/', function (req, res, next) {
   });
 }, function (req, res) {
   _index2.default.respond.message(req, res).then(function (message) {
-    return res.end(JSON.stringify(message, null, 2));
+    res.end(JSON.stringify(message, null, 2));
+    console.log(message);
   });
 });
 
