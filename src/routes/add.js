@@ -21,7 +21,10 @@ router.post(
       .catch(error => res.json(error));
   },
   (req, res) => {
-    controllers.respond.message(req, res).then(message => res.end(JSON.stringify(message, null, 2)));
+    controllers.respond.message(req, res).then(message => {
+      res.end(JSON.stringify(message, null, 2));
+      console.log(message);
+    });
   }
 );
 

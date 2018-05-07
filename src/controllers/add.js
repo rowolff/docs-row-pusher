@@ -26,7 +26,6 @@ const add = {
       async.series(
         [
           function setAuth(step) {
-            console.log(creds);
             doc.useServiceAccountAuth(creds, step);
           },
           function getInfoAndWorksheets(step) {
